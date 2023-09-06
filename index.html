@@ -36,6 +36,49 @@
     </nav>
 
     <!--Header-->
+
+    <!--Modal-->
+    <div class="modal fade" tabindex="-1" id="booking-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Book a tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row g-2">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input id="email1" type="email" class="form-control" placeholder="Your Email">
+                                    <label for="email1">Email address</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select id="select1" type="" class="form-select">
+                                        <option>Kruger Park, South Africa - $899</option>
+                                        <option>Paris, France - $1999</option>
+                                        <option>South Tyrol, Italy - $1249</option>
+                                        <option>Reykjavik, Iceland - $1899</option>
+                                        <option>Phi Phi Island, Thailand - $1099</option>
+                                    </select>
+                                    <label for="select1">Select tour</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Carousel-->
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -53,42 +96,48 @@
         <div class="carousel-inner">
             <div class="carousel-item active c-item">
                 <img src="./images/africa.jpg" class="d-block w-100 c-image" alt="...">
-                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                    <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5 text-uppercase">Discover Africa's beauty</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
-                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-modal">Book a
+                            tour</button>
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./images/france.jpg" class="d-block w-100 c-image" alt="...">
-                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <div class="carousel-caption top-0 mt-4">
                     <p class="fs-3 mt-5 text-uppercase">Explore old cities</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
-                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-modal">Book a tour</button>
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./images/lago-di-braies.jpg" class="d-block w-100 c-image" alt="...">
-                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <div class="carousel-caption top-0 mt-4">
                     <p class="fs-3 mt-5 text-uppercase">Go glacier hiking</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
-                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-modal">Book a tour</button>
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./images/norway.jpg" class="d-block w-100 c-image" alt="...">
-                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <div class="carousel-caption top-0 mt-4">
                     <p class="fs-3 mt-5 text-uppercase">Marvel at the night sky</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
-                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-modal">Book a tour</button>
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./images/thailand.jpg" class="d-block w-100 c-image" alt="...">
-                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <div class="carousel-caption top-0 mt-4">
                     <p class="fs-3 mt-5 text-uppercase">Find inner peace</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
-                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-modal">Book a tour</button>
                 </div>
             </div>
         </div>
