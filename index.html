@@ -16,7 +16,7 @@
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">RoamingRoutes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -45,7 +45,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Book a tour</h5>
+                    <h5 class="modal-title">Book a trip</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -80,7 +80,7 @@
     </section>
 
     <!--Carousel-->
-    <section id="hero-carousel" class="carousel slide">
+    <section id="hero-carousel" class="carousel slide pt-5">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -97,8 +97,7 @@
                     <p class="fs-3 mt-5 text-uppercase">Discover majestic animals</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
                         <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
-                            data-bs-target="#booking-modal">Book a
-                            tour</button>
+                            data-bs-target="#booking-modal">Book a trip</button>
                 </div>
             </div>
             <div class="carousel-item c-item">
@@ -107,7 +106,7 @@
                     <p class="fs-3 mt-5 text-uppercase">Marvel at the night sky</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
                         <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
-                            data-bs-target="#booking-modal">Book a tour</button>
+                            data-bs-target="#booking-modal">Book a trip</button>
                 </div>
             </div>
             <div class="carousel-item c-item">
@@ -116,7 +115,7 @@
                     <p class="fs-3 mt-5 text-uppercase">Find inner peace</p>
                     <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
                         <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
-                            data-bs-target="#booking-modal">Book a tour</button>
+                            data-bs-target="#booking-modal">Book a trip</button>
                 </div>
             </div>
         </div>
@@ -153,8 +152,8 @@
     </section>
 
     <!--Packages Section-->
-    <section id="packages" class="pt-4">
-        <h2 class="text-center my-5">Packages</h2>
+    <section id="packages" class="pt-md-5">
+        <h2 class="my-5 text-center fw-bold">Packages</h2>
 
         <div class="container">
             <div class="row">
@@ -163,11 +162,12 @@
                         <img src="./images/south-africa.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">South Africa</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Similique
                                 consequatur cumque ipsum quam dolorem cupiditate, cum ab iusto corrupti perspiciatis?
                             </p>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#booking-modal">Book tour</a>
+                                data-bs-target="#booking-modal">Book trip</a>
                         </div>
                     </div>
                 </div>
@@ -176,11 +176,12 @@
                         <img src="./images/reykjavik.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Iceland</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+                            <p class="card-text text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Excepturi
                                 atque
                                 vel, quibusdam necessitatibus minus aspernatur accusamus ut ducimus.</p>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#booking-modal">Book tour</a>
+                                data-bs-target="#booking-modal">Book trip</a>
                         </div>
                     </div>
                 </div>
@@ -189,11 +190,12 @@
                         <img src="./images/thailand.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Thailand</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est cum
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Id est cum
                                 beatae
                                 nobis amet quidem, quas culpa nostrum. Rem ducimus asperiores labore.</p>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#booking-modal">Book tour</a>
+                                data-bs-target="#booking-modal">Book trip</a>
                         </div>
                     </div>
                 </div>
@@ -202,15 +204,111 @@
     </section>
 
     <!--FAQs-->
-    <section id="faqs" class="py-5">
+    <section id="faqs" class="py-md-5">
+        <div class="container">
+            <h2 class="my-5 text-center fw-bold">FAQs</h2>
 
+            <div class="accordion w-75 mx-auto" id="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How long are the tours?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias suscipit vel et
+                            praesentium similique iure facere dolores ipsa doloremque odit natus tempora laborum, ea
+                            quibusdam vitae molestias placeat animi rem nam minima officiis sunt!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Are the flights included?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores numquam
+                            explicabo odit perspiciatis sit quidem optio! Dicta debitis eveniet mollitia!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I cancel after booking?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro dignissimos nam
+                            tempora cum fugiat voluptas voluptate corporis? Aut, molestiae consequuntur. Amet culpa
+                            nulla consequatur cum blanditiis beatae voluptatum quod neque doloribus officiis rerum
+                            eligendi quis eos suscipit, ea eaque omnis minima, cupiditate hic aperiam totam labore
+                            consequuntur. Autem exercitationem tenetur modi magnam! Quos et, est commodi ipsa
+                            dolorem aut?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--Contact Section-->
+    <!-- <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center fw-bolder mb-4">
+                        Contact Info
+                    </h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Main Location:
+                            </span> 55 Lion Way, Cape Town, South Africa, 8001
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Contact Number:
+                            </span> +27 86 000 000
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Queries Email:
+                            </span> enquiries@roamingroutes.travel
+                        </li>
+
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Billing Email:
+                            </span> billing@roamingroutes.travel
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <!--Main End-->
 
     <!--Footer-->
+    <footer class="bg-dark py-5">
+        <div class="container text-light text-center">
+            <p class="display-5 mb-3">RoamingRoutes</p>
+            <small class="text-white-50">
+                Copyright &copy; 2023. All rights reserved.
+            </small>
+        </div>
+    </footer>
 
 </body>
 
