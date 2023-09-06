@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>RoamingRoutes</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -36,9 +37,8 @@
     </nav>
 
     <!--Header-->
-
     <!--Modal-->
-    <div class="modal fade" tabindex="-1" id="booking-modal">
+    <section class="modal fade" tabindex="-1" id="booking-modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -76,20 +76,20 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--Carousel-->
-    <div id="carouselExample" class="carousel slide">
+    <section id="hero-carousel" class="carousel slide">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
                 aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4"
                 aria-label="Slide 5"></button>
         </div>
 
@@ -141,18 +141,40 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </section>
+    <!--Header End-->
 
     <!--Main-->
+    <!--Overview Section-->
+    <section class="overview bg-dark text-light">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 text-center fs-4">
+                <div class="col-xl pb-2">
+                    <i class="bi bi-airplane-fill me-2"></i>
+                    5 amazing destinations
+                </div>
+                <div class="col-xl pb-2">
+                    <i class="bi bi-credit-card-fill me-2"></i>
+                    Only pay 10% upfront
+                </div>
+                <div class="col-xl">
+                    <i class="bi bi-person-hearts me-2"></i>
+                    1000's of happy customers
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--Packages Section-->
+    <!--Main End-->
 
     <!--Footer-->
 
