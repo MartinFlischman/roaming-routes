@@ -1,5 +1,10 @@
 .c-item {
-    height: 480px;
+    height: 560px;
+}
+
+.c-card {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .c-image {
@@ -10,5 +15,11 @@
 
 .overview {
     /* background-color: #d3dae1; */
-    height: 180px;
+    height: 200px;
+}
+
+@media(max-width: 768px) {
+    .c-item {
+            height: 480px;
+        }
 }
