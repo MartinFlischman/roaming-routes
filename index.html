@@ -16,7 +16,7 @@
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
         <div class="container">
             <a class="navbar-brand" href="#">RoamingRoutes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -24,17 +24,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#packages">Packages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#faqs">FAQs</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item me-2">
                         <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
+                <div class="d-flex">
+                    <button class="btn btn-primary" type="submit" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book trip</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -80,7 +84,7 @@
     </section>
 
     <!--Carousel-->
-    <section id="hero-carousel" class="carousel slide pt-5">
+    <section id="hero-carousel" class="carousel slide mt-4 pt-5">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -92,30 +96,21 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active c-item">
-                <img src="./images/africa.jpg" class="d-block w-100 c-image" alt="...">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="fs-3 mt-5 text-uppercase">Discover majestic animals</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
-                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
-                            data-bs-target="#booking-modal">Book a trip</button>
+                <img src="./images/africa.jpg" class="d-block w-100 c-image" alt="african sunset with a giraffe">
+                <div class="carousel-caption top-0 d-flex align-items-center justify-content-center">
+                    <h1 class="display-4 fw-bolder text-uppercase pb-4">Discover majestic animals</h1>
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./images/norway.jpg" class="d-block w-100 c-image" alt="...">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="fs-3 mt-5 text-uppercase">Marvel at the night sky</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
-                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
-                            data-bs-target="#booking-modal">Book a trip</button>
+                <div class="carousel-caption top-0 d-flex align-items-center justify-content-center">
+                    <h1 class="display-4 fw-bolder text-uppercase pb-4">Marvel at the night sky</h1>
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./images/phiphi.jpg" class="d-block w-100 c-image" alt="...">
-                <div class="carousel-caption top-0 mt-4">
-                    <p class="fs-3 mt-5 text-uppercase">Find inner peace</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Roaming Routes</p>
-                        <button type="button" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
-                            data-bs-target="#booking-modal">Book a trip</button>
+                <div class="carousel-caption top-0 d-flex align-items-center justify-content-center">
+                    <h1 class="display-4 fw-bolder text-uppercase pb-4">Find inner peace</h1>
                 </div>
             </div>
         </div>
@@ -152,7 +147,7 @@
     </section>
 
     <!--Packages Section-->
-    <section id="packages" class="pt-md-5">
+    <section id="packages" class="py-md-5 px-3 px-md-0">
         <h2 class="my-5 text-center fw-bold">Packages</h2>
 
         <div class="container">
@@ -204,7 +199,7 @@
     </section>
 
     <!--FAQs-->
-    <section id="faqs" class="py-md-5">
+    <section id="faqs" class="pb-md-5">
         <div class="container">
             <h2 class="my-5 text-center fw-bold">FAQs</h2>
 
