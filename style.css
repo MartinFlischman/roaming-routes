@@ -1,3 +1,12 @@
+a {
+    text-decoration: none;
+    color: #909294;
+}
+
+a:hover {
+    text-decoration: 1px underline #fff;
+}
+
 .c-item {
     height: 560px;
 }
